@@ -6,9 +6,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <body>
     <nav>
         <div id="head-title">Ridho Aji Gumilang</div> 
     </nav>
+    <section class="top">
+        <div class="text"><p>Perkenalkan nama saya adalah Ridho Aji Gumilang, saat ini saya adalah mahasiswa Teknik Informatika tingkat satu</p></div>
+        <div class="img"><img src="selfie.jpg" alt="Ridho Aji Gumilang"></div>
+    </section>
+    <menu>
+        <ul>
+            <li onmouseover="menuDetail(1)" onmouseout="menuDetail(0)">Saya</li>
+            <li onmouseover="menuDetail(2)">Skill</li>
+            <li onmouseover="menuDetail(3)">Pengalaman</li>
+            <li onmouseover="menuDetail(4)">Kontak</li>
+        </ul>
+    </menu>
+    <p id="menu-detail">Situs ini dibuat dengan tujuan pembaca dapat mengenali diri saya</p>
+    <script>
+        var x = 1;
+        function menuDetail(x){
+            if (x == 0){
+                document.getElementById("menu-detail").innerHTML = "Situs ini dibuat dengan tujuan pembaca dapat mengenali diri saya";
+            }
+            if (x == 1){
+                document.getElementById("menu-detail").innerHTML = "Pengenalan diri saya";
+            }
+        }
+    </script>
 </body>
 </html>

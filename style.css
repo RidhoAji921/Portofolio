@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* nav */
 nav{
     background-color: hsl(0, 0%, 14%);
     display: flex;
@@ -15,4 +16,71 @@ nav #head-title{
     font-family: 'Playfair Display SC', serif;
     color: rgb(255, 255, 255);
     padding: 7px 0 7px 0;
+}
+
+/* top */
+section.top{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(213, 213, 213);
+}
+
+section.top > *{
+    margin: 20px;
+}
+
+.top .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .text p{
+    font-size: 1.4em;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.top .img{
+    display: flex;
+    justify-content: center;
+}
+
+.top .img img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* menu */
+menu{
+    background-color: hsl(0, 0%, 14%);
+}
+
+menu ul{
+    display: flex;
+}
+
+menu ul li{
+    background-color: hsl(0, 0%, 14%);
+    display: flex;
+    color: rgb(230, 230, 230);
+    font-size: 1.4em;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2%;
+    width: 15%;
+    justify-content: center;
+    user-select: none;
+}
+
+menu ul li:hover{
+    background-color: white;
+    color: black;
+}
+
+#menu-detail{
+    margin: 2%;
+    font-family: 'Montserrat', sans-serif;
 }
